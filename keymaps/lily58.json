@@ -1,7 +1,7 @@
 {
 	"keymap": "shtwzrd",
     "keyboard": "lily58",
-	"layout": "LAYOUT_36key_w",
+	"layout": "LAYOUT_36key_lily_w",
 	"layers": [
 		[ "_BSE" ],
 		[ "_AUX" ],

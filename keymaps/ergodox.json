@@ -1,7 +1,7 @@
 {
 	"keymap": "shtwzrd",
     "keyboard": "ergodox_ez/base",
-	"layout": "LAYOUT_36key_w",
+	"layout": "LAYOUT_36key_ergo_w",
     "debounce": 45,
 	"layers": [
 		[ "_BSE" ],
