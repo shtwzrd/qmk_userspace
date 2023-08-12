@@ -33,9 +33,9 @@ enum custom_keycodes {
     KC_Z   , KC_X   , KC_C   , KC_D   , KC_V   , KC_K   , KC_H   , KC_COMM, KC_DOT , KC_SLSH, \
                       LT_AUX , LT_NAV , OS_MOD , OS_MOD , LT_NUM , LT_SYM
 #define _AUX \
-    _______, _______, KC_UP  , _______, _______, KC_BRID, KC_VOLD, KC_MUTE, KC_VOLU, KC_BRIU, \
+    _______, KC_MEH , KC_UP  , KC_HYPR, _______, KC_BRID, KC_VOLD, KC_MUTE, KC_VOLU, KC_BRIU, \
     _______, KC_LEFT, KC_DOWN, KC_RGHT, QK_LEAD, QK_LEAD, KC_MPRV, KC_MRWD, KC_MFFD, KC_MNXT, \
-    _______, _______, _______, _______, L_LOCK , L_LOCK , _______, _______, _______, _______, \
+    _______, _______, RALTTAB, ALTTAB , L_LOCK , L_LOCK , _______, _______, _______, _______, \
                       KC_BSPC, _______, _______, _______, KC_MPLY, KC_MSTP
 #define _NAV \
     KC_QUOT, KC_Y   , KC_U   , KC_L   , KC_J   , KC_HOME, KC_PGDN, KC_PGUP, KC_END , KC_INS , \
@@ -49,12 +49,12 @@ enum custom_keycodes {
                       KC_DEL , _______, OS_NAV , _______, _______, _______
 #define _NUM \
     KC_LBRC, KC_7   , KC_8   , KC_9   , KC_RBRC, KC_HOME, KC_PGDN, KC_PGUP, KC_END , KC_DQUO, \
-    KC_SCLN, KC_4   , KC_5   , KC_6   , KC_EQL , KC_LEFT, KC_DOWN, KC_UP  , KC_RGHT, _______, \
+    KC_SCLN, KC_4   , KC_5   , KC_6   , KC_EQL , KC_LEFT, KC_DOWN, KC_UP  , KC_RGHT, KC_SCLN, \
     KC_GRV , KC_1   , KC_2   , KC_3   , KC_BSLS, L_LOCK , _______, KC_LT  , KC_GT  , KC_QUES, \
                       KC_MINS, KC_0   , _______, _______, KC_ESC , _______
 #define _SYM \
-    KC_LCBR, KC_AMPR, KC_ASTR, KC_UNDS, KC_RCBR, _______, _______, _______, _______, _______, \
-    KC_COLN, KC_DLR , KC_PERC, KC_CIRC, KC_PLUS, KC_LEFT, KC_DOWN, KC_UP  , KC_RGHT, _______, \
+    KC_LCBR, KC_AMPR, KC_ASTR, KC_UNDS, KC_RCBR, _______, KC_HYPR, _______, KC_MEH , _______, \
+    KC_COLN, KC_DLR , KC_PERC, KC_CIRC, KC_PLUS, KC_LEFT, KC_DOWN, KC_UP  , KC_RGHT, KC_COLN, \
     KC_TILD, KC_EXLM, KC_AT  , KC_HASH, KC_PIPE, L_LOCK , ALTTAB , RALTTAB, _______, _______, \
                       KC_LPRN, KC_RPRN, _______, _______, _______, KC_TAB
 #define _FUN \
