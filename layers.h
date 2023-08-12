@@ -24,6 +24,9 @@ enum custom_keycodes {
 #define LT_NUM LT(NUM, KC_ESC)
 #define LT_SYM LT(SYM, KC_TAB)
 
+#define ALTTAB LALT(KC_TAB)
+#define RALTTAB LSFT(LALT(KC_TAB))
+
 #define _BSE \
     KC_Q   , KC_W   , KC_F   , KC_P   , KC_B   , KC_J   , KC_L   , KC_U   , KC_Y   , KC_QUOT, \
     KC_A   , KC_R   , KC_S   , KC_T   , KC_G   , KC_M   , KC_N   , KC_E   , KC_I   , KC_O,    \
@@ -45,14 +48,14 @@ enum custom_keycodes {
     KC_RGUI, KC_RALT, KC_RCTL, CW_TOGG, KC_APP , L_LOCK , CW_TOGG, KC_RCTL, KC_RALT, KC_RGUI, \
                       KC_DEL , _______, OS_NAV , _______, _______, _______
 #define _NUM \
-    KC_LBRC, KC_7   , KC_8   , KC_9   , KC_RBRC, KC_HOME, KC_PGDN, KC_PGUP, KC_END , _______, \
+    KC_LBRC, KC_7   , KC_8   , KC_9   , KC_RBRC, KC_HOME, KC_PGDN, KC_PGUP, KC_END , KC_DQUO, \
     KC_SCLN, KC_4   , KC_5   , KC_6   , KC_EQL , KC_LEFT, KC_DOWN, KC_UP  , KC_RGHT, _______, \
-    KC_GRV , KC_1   , KC_2   , KC_3   , KC_BSLS, L_LOCK , _______, _______, _______, _______, \
+    KC_GRV , KC_1   , KC_2   , KC_3   , KC_BSLS, L_LOCK , _______, KC_LT  , KC_GT  , KC_QUES, \
                       KC_MINS, KC_0   , _______, _______, KC_ESC , _______
 #define _SYM \
     KC_LCBR, KC_AMPR, KC_ASTR, KC_UNDS, KC_RCBR, _______, _______, _______, _______, _______, \
-    KC_COLN, KC_DLR , KC_PERC, KC_CIRC, KC_PLUS, _______, _______, _______, _______, _______, \
-    KC_TILD, KC_EXLM, KC_AT  , KC_HASH, KC_PIPE, L_LOCK , _______, _______, _______, _______, \
+    KC_COLN, KC_DLR , KC_PERC, KC_CIRC, KC_PLUS, KC_LEFT, KC_DOWN, KC_UP  , KC_RGHT, _______, \
+    KC_TILD, KC_EXLM, KC_AT  , KC_HASH, KC_PIPE, L_LOCK , ALTTAB , RALTTAB, _______, _______, \
                       KC_LPRN, KC_RPRN, _______, _______, _______, KC_TAB
 #define _FUN \
     KC_F12 , KC_F7  , KC_F8  , KC_F9  , KC_PSCR, PB_1   , KC_F19 , KC_F20 , KC_F21 , KC_F24 , \
